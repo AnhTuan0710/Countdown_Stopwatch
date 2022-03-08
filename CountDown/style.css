@@ -46,7 +46,7 @@
 #status2{
     position: absolute;
     display: block;
-    margin: 30px 150px;
+    margin: 30px 150px; 
     width: 400px;
     height: 50px;
     display: none;

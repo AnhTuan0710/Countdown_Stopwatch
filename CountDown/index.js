@@ -5,6 +5,9 @@ var a;
 var status1 = "set";
 var interval;
 var status2= "Stopped";
+var hour1;
+var minute1;
+var second1;
 
 function setTime(a) {
     if (second == 0) {
@@ -39,9 +42,26 @@ function setTime(a) {
     document.getElementById('hour').innerHTML = hour;
     document.getElementById('minute').innerHTML = minute;
     document.getElementById('second').innerHTML = second;
+    hour1= hour;
+    minute1= minute;
+    second1= second;
 }
 function set()
 {
+    var second2 = second-60;
+    if(second2>0)
+    {
+        second=second-60;
+        minute++;
+        if(minute>60)
+        {
+            hour++;
+            minute= minute-60;
+        }
+    }
+    hour1= hour;
+    minute1= minute;
+    second1= second;
     status1= "start";
     document.getElementById('status1').style.display= 'none';
     document.getElementById('status2').style.display= 'block';
@@ -50,6 +70,7 @@ function set()
     document.getElementById('second').innerHTML = second;
     status2="Stopped";
     document.getElementById('start').innerHTML= 'Start';
+    
 }
 function back()
 {
@@ -119,6 +140,9 @@ function startStop(){
         }
 }
 function clear2(){
+    hour= hour1;
+    minute= minute1;
+    second= second1;
     document.getElementById('hour').innerHTML = hour;
     document.getElementById('minute').innerHTML = minute;
     document.getElementById('second').innerHTML = second;
