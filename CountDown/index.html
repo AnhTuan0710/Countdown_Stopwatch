@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>COUNTDOWN</h1>
+        <div class="time">
+            <span id="hour">0</span>:
+            <span id="minute">0</span>:
+            <span id="second">0</span>
+        </div>
+        <div id="status1">
+            <div class="row1">
+                <button id="number5" onclick="setTime(5)">5</button>
+                <button id="number6" onclick="setTime(6)">6</button>
+                <button id="number7" onclick="setTime(7)">7</button>
+                <button id="number8" onclick="setTime(8)">8</button>
+                <button id="number9" onclick="setTime(9)">9</button>
+                <button id="set" onclick="set()">Set</button>
+            </div>
+            <div class="row2">
+                <button id="number0" onclick="setTime(0)">0</button>
+                <button id="number1" onclick="setTime(1)">1</button>
+                <button id="number2" onclick="setTime(2)">2</button>
+                <button id="number3" onclick="setTime(3)">3</button>
+                <button id="number4" onclick="setTime(4)">4</button>
+                <button id="clear1" onclick="clear1()">Clear</button>
+            </div>
+        </div>
+        <div id="status2">
+            <button id="start" onclick="startStop()">Start</button>
+            <button id="clear2" onclick="clear2()">Clear</button>
+            <button id="back" onclick="back()">Back</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

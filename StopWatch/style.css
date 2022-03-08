@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+}
+h1{
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+button{
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 30px;
+    border-radius: 5px ;
+    margin: 5px 15px;
+    padding: 5px 15px;
+}
+button:hover{
+    color: white;
+}
+sub{
+    font-size: 17px;
+}
+#start{
+    background-color: #00e800;
+}
+#clear{
+    background-color: #ff0000;
+}
+#display{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(155, 155, 155);
+    margin: 5px auto;
+    line-height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
